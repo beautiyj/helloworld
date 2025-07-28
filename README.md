@@ -26,15 +26,15 @@ markdown language 쓴다 _ 편집가능언?어를씀 _ 커밋체인지스초록�
 리스트
 
 
-# 📜 김동우 포트폴리오
+# 📜 포트폴리오 가져오기 실습
 
-> 김동우(Dongwoo Kim) - kimphysicsman 포트폴리오
+> read me 클릭, raw 클릭, 코드 복사->긁어오기.
 
 <br />
 
 # 👋 Intro
 
-> 안녕하세요! ***"항상 새로운 것을 배우고 도전하고 싶은"*** 김동우입니다!  
+> 안녕하세요! ***"항상 새로운 것을 배우고 도전하고 싶은"*** 입니다!  
 > 5개월간 ***팀장***을 맡으며 팀 프로젝트를 진행하여 백엔드 개발자 역량을 길렀고  
 > 내가 이해한 내용을 다른 사람들에게 설명하며 함께 성장할 수 있도록 ***영상***으로 기록했습니다.  
 > 저에 대한 더 자세한 내용은 <a href="https://www.notion.so/kimphysicsman/PROFILE-6bf254d419af4910b776c111efb371e4"> <img src="https://img.shields.io/badge/-Profile-8AC926?style=for-the-badge" height="20px" style="margin-bottom: -5px" /> </a>이곳을 통해 확인 하실 수 있습니다!
@@ -161,7 +161,7 @@ markdown language 쓴다 _ 편집가능언?어를씀 _ 커밋체인지스초록�
 
 # 📞 Contact
 
-- 이메일 : kimphysicsman@gmail.com
+- 이메일 : 
 - 블로그 : <a href="https://velog.io/@kimphysicsman">
   <img src="https://user-images.githubusercontent.com/68724828/185885678-8f619bfa-1160-4bb4-a026-f758a4014f82.png" height="26px" style="margin-top: 10px" />
   </a>
