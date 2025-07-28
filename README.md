@@ -2,6 +2,13 @@
 헬로우월드입니다.
 markdown language 쓴다 _ 편집가능언?어를씀 _ 커밋체인지스초록색쓰면저장가능하고 커밋메시지쓰는이유는 여러명과사용하기땜시 제목및상세수정사항기재하는거
 # 개발자소개
+|제목|내용|설명|
+|------|---|---|
+|이름|홍길동| |
+|기술|frontend|html, css, js, kotlin|
+|    |backend|django, flask|
+|    |DataBase|Oracle|
+
 ## 작품1 - django framework 활용 게시판 만들기
 ### 설계도
 <img src="archi.jpg"/>
