@@ -1,0 +1,124 @@
+
+✅ 함수에서 값을 "반환(return)"하지 않으면, 그 함수는 어떤 값을 돌려주지 않고 단순히 동작만 함.
+
+🔍 왜 x = say_hello() 하면 x는 None일까?
+
+```python
+def say_hello():
+    print("Hello!")
+
+x = say_hello()
+```
+
+→ say_hello() 실행 → "Hello!" 출력  
+→ return이 없으므로 파이썬이 자동으로 None을 반환  
+→ x에는 None이 저장됨
+
+📌 핵심 개념: return이 없으면 반환값은 None
+
+예시 1: return이 없는 함수
+```python
+def f1():
+    print("동작만 하고 끝")
+
+x = f1()      # 출력: 동작만 하고 끝
+print(x)      # 출력: None ← return 없어서 None
+```
+
+예시 2: return이 있는 함수
+```python
+def f2():
+    return 42
+
+x = f2()
+print(x)      # 출력: 42 ← return이 있음
+```
+
+💬 꼭 return을 써야 하나요?
+- 동작만 하는 함수라면 return 없이도 OK (ex: print(), 저장 등)
+- 값을 다음 작업에서 쓰려면 return 반드시 필요
+
+🎯 정리
+
+| 목적             | return 필요 여부 |
+|------------------|------------------|
+| 그냥 동작만 시키기 | ❌ 필요 없음       |
+| 값을 받아서 저장/사용 | ✅ 반드시 필요       |
+
+🔁 비유: 함수 = 자판기
+- say_hello(): 버튼 누르면 소리만 나는 자판기 (출력만, 값 없음)
+- return 있는 함수: 물건 나오는 자판기 (값을 변수에 저장 가능)
+
+✅ 일회성 함수란?
+함수가 실행되고 끝나면 아무 값도 남지 않는 함수 (return 없음)
+
+```python
+def save_file():
+    print("파일 저장 완료!")
+
+save_file()         # 파일 저장 완료!
+result = save_file()
+print(result)       # None
+```
+
+📦 return이 있는 함수는 결과를 저장하고 재사용 가능
+
+```python
+def add(a, b):
+    return a + b
+
+result = add(3, 5)
+print(result)       # 8
+```
+
+✅ 함수에서 return 값은 "함수 호출의 결과"다
+
+```python
+def add(a, b):
+    return a + b
+
+result = add(3, 5)  # 결국 result = 8 과 같음
+```
+
+✅ 조건이 있는 return 함수 예제
+
+```python
+def smart_add(a, b):
+    result = a + b
+    if result % 2 == 0:
+        return result
+    else:
+        return result + 1
+
+x = smart_add(3, 5)  # 8 → 짝수 → 8
+y = smart_add(2, 5)  # 7 → 홀수 → 8
+
+print("x =", x)
+print("y =", y)
+```
+
+→ return 전에 조건문이 있으므로, 먼저 조건 판단 후 적절한 return 실행됨
+
+✅ return은 함수 내부 로직(조건문/반복문 등)이 실행된 뒤 발생
+
+```python
+def check_number(n):
+    if n > 0:
+        return "양수"
+    elif n == 0:
+        return "0"
+    else:
+        return "음수"
+
+x = check_number(-5)
+print(x)  # "음수"
+```
+
+✅ 함수 정의는 위에서 하지만, 실행은 메인루틴부터 시작
+
+→ 헷갈릴 경우, 다음 방법으로 정리하며 코딩:
+
+1. 함수는 “준비”로 생각, 실행은 “메인 코드”
+2. 코드 흐름을 메모나 시각화로 먼저 정리
+3. 복잡할수록 메인 루틴 → 서브루틴 호출 구조를 명확히 설계
+
